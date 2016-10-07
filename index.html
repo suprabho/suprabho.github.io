@@ -105,7 +105,7 @@
 	            <div class="col-md-5">
 	            	<div class=" card-raised card ">
 	            		<div class="title title-right">
-	            			<h2>Things I Do</h2>
+	            			<h2>Stuff I Do</h2>
 	               		</div>
 	               		 <div>
 							<p class="para"> I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. </p>
@@ -120,7 +120,7 @@
 				<div class="row">
 					<div class=" col-md-10 col-md-offset-1">
 						<div class="title-center">
-							<h2>Things I've done so far</h2>
+							<h2>Stuff I've done so far</h2>
 						</div>
 
 						<!-- Tabs with icons on Card -->
@@ -222,7 +222,7 @@
 	    		<div class="col-md-10 col-md-offset-1">
 	            	<div class=" card-raised card ">
 	            		<div class="title-left title ">
-	            			<h2>The softwares I know</h2>
+	            			<h2>Stuff I know</h2>
 	               		</div>
 
 	               		<p class="tag"> Illustrator</p> 
@@ -272,10 +272,55 @@
 
             if (window_width >= 992){
                 big_image = $('.wrapper > .header');
+                
 
 				$(window).on('scroll', materialKitDemo.checkScrollForParallax);
+
 			}
+
+			
 
 		});
 	</script>
+	<script type="text/javascript">
+
+		$().ready(function(){
+			// the body of this function is in assets/material-kit.js
+			
+            window_width = $(window).width();
+
+            if (window_width >= 992){
+               
+                small_box = $('.title');
+
+				$(window).on('scroll', materialKitDemo.checkScrollForParallax);
+
+			}
+
+			
+
+		});
+	</script>
+	<script type="text/javascript">
+
+		$().ready(function(){
+			// the body of this function is in assets/material-kit.js
+			
+            window_width = $(window).width();
+
+            if (window_width >= 992){
+               
+                big_box = $('.card');
+
+				$(window).on('scroll', materialKitDemo.checkScrollForParallax);
+
+			}
+
+			
+
+		});
+	</script>
+	
+	
+
 </html>
