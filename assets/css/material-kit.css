@@ -3681,6 +3681,9 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   margin-top: 30vh;
   color: #FFFFFF;
   text-align: left;
+  margin-left: 30px;
+  margin-right: 20px;
+
 }
 .index-page .brand h1 {
   font-size: 4.8em;
