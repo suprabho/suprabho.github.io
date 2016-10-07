@@ -113,7 +113,7 @@ var big_image;
 var small_box
 var big_box;
 var small_image;
-var small_text;
+var useless_text;
 
 materialKitDemo = {
     checkScrollForParallax: debounce(function(){
@@ -135,12 +135,20 @@ materialKitDemo = {
             '-o-transform':'translate3d(0,' + oVal2 +'px,0)'
         });
 
-        oVal3 = (-1)*($(window).scrollTop()/15);
+        oVal3 = (-1)*($(window).scrollTop()/12);
         big_box.css({
             'transform':'translate3d(0,' + oVal3 +'px,0)',
             '-webkit-transform':'translate3d(0,' + oVal3 +'px,0)',
             '-ms-transform':'translate3d(0,' + oVal3 +'px,0)',
             '-o-transform':'translate3d(0,' + oVal3 +'px,0)'
+        });
+
+        oVal4 = (1)*($(window).scrollTop()/20);
+        useless_text.css({
+            'transform':'translate3d(0,' + oVal4 +'px,0)',
+            '-webkit-transform':'translate3d(0,' + oVal4 +'px,0)',
+            '-ms-transform':'translate3d(0,' + oVal4 +'px,0)',
+            '-o-transform':'translate3d(0,' + oVal4 +'px,0)'
         });
 
         
