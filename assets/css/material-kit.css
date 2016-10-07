@@ -1950,9 +1950,11 @@ footer ul {
   list-style: none;
 }
 footer ul li {
+  color:#207165;
   display: inline-block;
 }
 footer ul li a {
+  
   color: inherit;
   padding: 15px;
   font-weight: 500;
@@ -1964,6 +1966,7 @@ footer ul li a {
   display: block;
 }
 footer ul li a:hover {
+  color:#3FE2C9;
   text-decoration: none;
 }
 footer .copyright {
@@ -3764,7 +3767,12 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 .signup-page .footer .copyright,
 .signup-page .footer a {
-  color: #FFFFFF;
+
+  color: #FC5157;
+}
+
+footer .copyright{
+  color: #FD7479;
 }
 
 .landing-page .navbar-transparent,
