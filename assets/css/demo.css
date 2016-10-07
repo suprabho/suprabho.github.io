@@ -113,7 +113,7 @@
     .title-left{
         margin-top: -55px;
         margin-right: 35%;
-        margin-left: -20px;
+        margin-left: 30px;
     }
 
     
@@ -137,9 +137,16 @@
         padding: 0;
     }
 
-    h2{
+    h2{ 
+       
         line-height: 1.2em;
     }
+
+    .title-center h2 {
+        padding-right:0; 
+        margin: auto;
+         font-size: 2em;
+     }
 
     .para{
         font-size:1.2em;
@@ -149,7 +156,7 @@
 
     .title-right{
         margin-top: -55px;
-        margin-left: 50px;
+        margin-left: 15px;
         margin-right: 25%;
     }
     .title-left{
@@ -164,7 +171,7 @@
 
     }
     .title-left h2 {
-       padding-left: 20px;
+       padding-left: 25px;
        text-align: left;
        font-size: 2.4em; 
 
