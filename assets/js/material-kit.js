@@ -143,7 +143,7 @@ materialKitDemo = {
             '-o-transform':'translate3d(0,' + oVal3 +'px,0)'
         });
 
-        oVal4 = (1)*($(window).scrollTop()/20);
+        oVal4 = (1)*($(window).scrollTop()/15);
         useless_text.css({
             'transform':'translate3d(0,' + oVal4 +'px,0)',
             '-webkit-transform':'translate3d(0,' + oVal4 +'px,0)',
