@@ -2720,7 +2720,7 @@ h2 .title {
 .nav-tabs > li > a, .nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
   background-color: transparent;
   border: 0 !important;
-  color: #FFFFFF !important;
+  color: #FFFFFF; 
   font-weight: 500;
 }
 .nav-tabs > li.disabled > a, .nav-tabs > li.disabled > a:hover {
@@ -3150,7 +3150,7 @@ hr.on-light {
 }
 
 * {
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: rgba(10,96,100,1);
   -webkit-tap-highlight-color: transparent;
 }
 *:focus {
