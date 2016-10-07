@@ -126,7 +126,7 @@ materialKitDemo = {
         });
 
         oVal2 = (-1)*($(window).scrollTop()/30);
-        big_box.css({
+        small_box.css({
             'transform':'translate3d(0,' + oVal2 +'px,0)',
             '-webkit-transform':'translate3d(0,' + oVal2 +'px,0)',
             '-ms-transform':'translate3d(0,' + oVal2 +'px,0)',
