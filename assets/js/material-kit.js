@@ -112,6 +112,8 @@ materialKit = {
 var big_image;
 var small_box
 var big_box;
+var small_image;
+var small_text;
 
 materialKitDemo = {
     checkScrollForParallax: debounce(function(){
@@ -140,6 +142,8 @@ materialKitDemo = {
             '-ms-transform':'translate3d(0,' + oVal3 +'px,0)',
             '-o-transform':'translate3d(0,' + oVal3 +'px,0)'
         });
+
+        
 
     }, 6)
 
