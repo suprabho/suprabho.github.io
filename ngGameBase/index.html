@@ -5,16 +5,18 @@
 		<link rel="stylesheet" type="text/css" href="node_modules/angular-material/angular-material.css">
 		<link href="node_modules/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" >
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
 	</head>
 
 	<body ng-app="ngGamebase" ng-controller="baseCtrl">
 
- 		<md-toolbar>
+	<md-card flex="95" class="base" style="margin: 10px auto" >
+		<md-card-content>
+ 		<md-content>
  			<div class="md-toolbar-tools">
- 				<p><strong>Popular by genres</strong></p>
+ 				<p style="margin-right: 60px;"><strong>Popular by genres</strong></p>
  			
-
  				<md-button>
  					All Genres
  				</md-button>
@@ -49,13 +51,37 @@
               			</md-menu-content>
               		</md-menu>
               	</md-menu-bar>
+              </div>
+ 			
+ 		</md-content>
 
- 			</div>
- 		</md-toolbar>
+
+ 		<md-toolbar>
+ 			<md-content class="md-padding" layout="row" layout-wrap style="padding-top: 35px;">
+ 			
+ 				<md-slider-container  flex="35">
+      				<span>Rating</span>
+      				<md-slider flex class="md-primary" flex min="88" max="92" ng-model="gamesRating" aria-label="rating" id="rating">
+     				 </md-slider>
+      				<md-input-container>
+        				<input  flex type="number" ng-model="gamesRating" aria-label="rating" id="rating">
+     			 	</md-input-container>
+     			</md-slider-container>
+     			 
+     			 <md-input-container flex="30" class="search">
+     			 	<md-icon class="mdi mdi-magnify"></md-icon>
+        			<input ng-model="searchGames">
+      			</md-input-container>
+
+      			 <md-input-container flex="10" class="search">
+     			 	<md-button class="md-warn" ng-click="gamesRating =''; searchGames=''"> Clear </md-button>
+      			</md-input-container>
+     		
+     		</md-content>
+    	</md-toolbar>
 
  		<md-content class="md-padding" layout="row" layout-wrap>
- 			<md-card ng-repeat="game in games" flex="45">
- 				<img >
+ 			<md-card ng-repeat="game in games | filter: searchGames | filter: gamesRating" flex="45">
  				<md-card-content>
  					<img ng-src="{{ game.image }}">
  					<div class="classified-info">
@@ -64,12 +90,10 @@
  						<p> {{ game.description }} </p>
  					</div>
  				</md-card-content>
-
-
- 			</md-card>
-
- 		</md-content>
-
+			</md-card>
+		</md-content>
+		</md-card-content>
+ 	</md-card>
  		
 
 	 <script src="node_modules/angular/angular.js"></script>

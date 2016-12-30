@@ -11,5 +11,9 @@
 				 $scope.games = games.data;
 
 			});
-	}); 
+
+			
+		}); 
+
+	 	
 })();   

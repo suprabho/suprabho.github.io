@@ -1,3 +1,11 @@
+.body {
+
+	font-family: 'Raleway', sans-serif;
+}
+.base {
+	max-height: inherit;
+}
+
 .md-button {
 	padding-top: 4px;
 }
@@ -7,4 +15,30 @@ button .material-icons {
 
 img{
 	max-height:200px;
+}
+
+md-slider-container > *:first-child:not(md-slider){
+	margin-right: 30px;
+}
+
+md-slider-container md-input-container input[type="number"]{
+	padding-left: 0;
+}
+
+.search {
+
+	margin-left:50px;
+	margin-top: -20px;
+}
+
+ md-toolbar:not(.md-menu-toolbar) md-icon{
+
+	color: #9E9E9E;
+    fill: #9E9E9E;
+
+}
+
+md-content { 
+	font-family: 'Raleway', sans-serif;
+	overflow: visible;
 }
