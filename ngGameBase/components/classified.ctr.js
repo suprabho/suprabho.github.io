@@ -9,11 +9,29 @@
 			gamesFactory.getGames().then(function(games) {
 
 				 $scope.games = games.data;
+				 $scope.genres = getGenres($scope.games);
 
 			});
 
 			
+
+			function getGenres(games) {
+
+				var genres = [];
+
+				angular.forEach(games, function(item) 
+				{
+					angular.forEach(item.genres, function(genre) 
+					{
+						genres.push(genre); 
+					});
+				});  
+
+				return   _.uniq(genres);
+			  }
+			
 		}); 
 
+		
 	 	
 })();   
