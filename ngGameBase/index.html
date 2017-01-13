@@ -37,7 +37,7 @@
      			 
      			 <md-input-container flex="30" class="search">
      			 	<md-icon class="mdi mdi-magnify"></md-icon>
-        			<input ng-model="searchGames">
+        			<input ng-model="search.name">
       			</md-input-container>
 
       			 <md-input-container flex="10" class="search">
@@ -48,7 +48,7 @@
     		</md-toolbar>
 
  			<md-content class="md-padding" layout="row" layout-wrap>
- 				<md-card ng-repeat="game in games | filter: searchGames | filter: gamesRating | filter : genre" flex="45">
+ 				<md-card ng-repeat="game in games | filter: search.name | filter : genre" flex="45" style="margin: 50px 20px;">
  					<md-card-content>
  						<div class="md-padding" layout="row" layout-wrap>
  							<div flex="45" >
