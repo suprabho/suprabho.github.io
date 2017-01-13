@@ -52,15 +52,15 @@
  					<md-card-content>
  						<div class="md-padding" layout="row" layout-wrap>
  							<div flex="45" >
- 								<img ng-src="{{ game.image }}" style="margin-top: -52px">
+ 								<img ng-src="{{ game.image }}" style="margin-top: -52px; box-shadow: 0px 5px 20px #9e9e9e;">
  							</div>
  							<div class="classified-info" flex=45" class="md-padding">
- 								<h2 class="md-title">{{ game.name }}</h2>
- 								<h4> by {{ game.developer}} </h4>
+ 								<h2 class="md-title"  style="font-size: 32px;">{{ game.name }}</h2>
+ 								<h4 style="font-size: 16px; font-weight: 100;"> by {{ game.developer}} </h4>
  							</div>
  						</div>
  						<div class="classified-description">
- 							<p> {{ game.description }} </p>
+ 							<p style="font-size: 14px;"> {{ game.description }} </p>
  						</div>
  					</md-card-content>
 				</md-card>
