@@ -51,7 +51,8 @@
  				<md-card ng-repeat="game in games | filter: searchGames | filter: gamesRating | filter : genre" flex="45">
  					<md-card-content>
  						<div>
- 							<img ng-src="{{ game.image }}" flex="35" >
+ 							<div flex="35">
+ 							<img ng-src="{{ game.image }}"  ></div>
  							<div class="classified-info" flex="40">
  								<h2 class="md-title">{{ game.name }}</h2>
  								<h4> by {{ game.developer}} </h4>
