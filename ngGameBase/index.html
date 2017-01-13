@@ -51,10 +51,10 @@
  				<md-card ng-repeat="game in games | filter: searchGames | filter: gamesRating | filter : genre" flex="45">
  					<md-card-content>
  						<div class="md-padding" layout="row" layout-wrap>
- 							<div flex="45">
- 								<img ng-src="{{ game.image }}">
+ 							<div flex="45" >
+ 								<img ng-src="{{ game.image }}" style="margin-top: -52px">
  							</div>
- 							<div class="classified-info" flex=45">
+ 							<div class="classified-info" flex=45" class="md-padding">
  								<h2 class="md-title">{{ game.name }}</h2>
  								<h4> by {{ game.developer}} </h4>
  							</div>
