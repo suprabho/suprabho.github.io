@@ -50,7 +50,7 @@
  			<md-content class="md-padding" layout="row" layout-wrap>
  				<md-card ng-repeat="game in games | filter: searchGames | filter: gamesRating | filter : genre" flex="45">
  					<md-card-content>
- 						<div layout="row">
+ 						<div class="md-padding" layout="row" layout-wrap>
  							<div flex="35">
  								<img ng-src="{{ game.image }}">
  							</div>
