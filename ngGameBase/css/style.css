@@ -43,3 +43,8 @@ md-content {
 	font-family: 'Raleway', sans-serif;
 	overflow: visible;
 }
+
+md-card {
+
+	box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.2), 0px 5px 15px 0px rgba(63,63,63, 0.75), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
