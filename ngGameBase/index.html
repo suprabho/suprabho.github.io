@@ -12,7 +12,7 @@
 
 	<body ng-app="ngGamebase" ng-controller="baseCtrl" style="background: -moz-linear-gradient(left, #00bcd4 0%, #18ffff 100%); 
 	background: -webkit-linear-gradient(left, #00bcd4 0%,#18ffff 100%); 
-	background: linear-gradient(to right, #00bcd4 0%,#18ffff 100%); height: auto;">
+	background: linear-gradient(to right, #00bcd4 0%,#18ffff 100%);">
 
 	<md-card flex="80" class="base" style="margin: 10px auto; background: #f5f5f5;" >
 		<md-card-content>
@@ -51,7 +51,7 @@
     		</md-toolbar>
 
  			<md-content class="md-padding" layout-gt-sm="row" layout-wrap style="background: #f5f5f5;">
- 				<md-card ng-repeat="game in games | filter: search.name | filter : genre | filter: gamesRating" flex style="margin: 50px 20px;">
+ 				<md-card ng-repeat="game in games | filter: search.name | filter : genre | filter: gamesRating" flex="45" style="margin: 50px 20px;">
  					<md-card-content>
  						<div class="md-padding" layout="row" layout-wrap>
  							<div flex="45">
