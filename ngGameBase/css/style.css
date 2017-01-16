@@ -47,6 +47,19 @@ md-card {
 	box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px 0px rgba(63,63,63, 0.15), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
 }
 
+md-slider.md-default-theme.md-primary .md-thumb:after, md-slider.md-primary .md-thumb:after {
+	border-color: #2196f3;
+    background-color: #2196f3;
+}
+md-slider.md-default-theme.md-primary .md-track.md-track-fill, md-slider.md-primary .md-track.md-track-fill {
+    background-color: #2196f3;
+}
+md-select.md-default-theme .md-select-value, md-select .md-select-value {
+    border-bottom-color: #2196f3;
+}
+md-select-menu.md-default-theme md-content md-option[selected], md-select-menu md-content md-option[selected] {
+    color: #2196f3;
+}
 
 
 @media screen and (min-width: 320px) and (max-width: 1280px) {

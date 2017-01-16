@@ -25,8 +25,8 @@
     box-shadow: 1px 0px 30px 0px rgba(63,63,63, 0.5);" >
 		<md-card-content style="color:#424242;">
 			
-			<div class="md-toolbar-tools" style="font-family:'Oswald'; color: #2196f3;">
-				<p style="margin-right: 60px; background: #f5f5f5;  font-family:'Oswald';"><strong>Popular by genres</strong></p>
+			<div class="md-toolbar-tools" style="font-family:'Oswald';">
+				<h2 style="margin-right: 60px; background: #f5f5f5;  font-family:'Oswald';">Popular by genres</h2>
  				
  				<md-select ng-model="genre">
  					<md-option ng-repeat="genre in genres" value="{{ genre }}">{{ genre }}</md-option>
@@ -52,13 +52,13 @@
       			</md-input-container>
 
       			 <md-input-container flex="10" class="search">
-     			 	<md-button class="md-warn" ng-click="gamesRating =''; searchGames=''; genre='';" style="border: solid 1px; margin-top: 35px;     right: -70%;"> Clear </md-button>
+     			 	<md-button class="md-warn" ng-click="gamesRating =''; searchGames=''; genre='';" style="border: solid 1px; margin-top: 35px;     right: -60%;"> Clear </md-button>
       			</md-input-container>
      		
      		</md-content>
     		</md-toolbar>
 
- 			<md-content class="md-padding" layout="row" layout-wrap style="background: #f5f5f5;">
+ 			<md-content class="md-padding" layout="row" layout-wrap style="background: #f5f5f5; color: #424242;">
  				<md-card class="gameCard" ng-repeat="game in games | filter: search.name | filter : genre | filter: gamesRating" flex="45" style="margin: 50px 20px;" >
  					<md-card-content>
  						<div class="md-padding" layout="row" layout-wrap>
