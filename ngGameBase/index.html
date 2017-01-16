@@ -58,11 +58,11 @@
      		</md-content>
     		</md-toolbar>
 
- 			<md-content class="md-padding" layout="row"  layout-sm="column" layout-wrap style="background: #f5f5f5;">
- 				<md-card ng-repeat="game in games | filter: search.name | filter : genre | filter: gamesRating" flex style="margin: 50px 20px;">
+ 			<md-content class="md-padding" layout-gt-sm="row"  layout-sm="column" layout-wrap style="background: #f5f5f5;">
+ 				<md-card ng-repeat="game in games | filter: search.name | filter : genre | filter: gamesRating" flex="45" style="margin: 50px 20px;">
  					<md-card-content>
  						<div class="md-padding" layout="row" layout-wrap>
- 							<div flex="45" >
+ 							<div flex="45">
  								<img ng-src="{{ game.image }}" style="margin-top: -52px; box-shadow: 0px 5px 20px rgba(158,158,158,0.5);">
  							</div>
  							<div class="ui rating" data-rating="3" data-max-rating="5"></div>
