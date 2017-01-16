@@ -3,8 +3,8 @@
  	.config(function($mdThemingProvider) {  
 
  		$mdThemingProvider.theme('default')
- 			.primaryPalette('Blue')
- 			.accentPalette('Red');
+ 			.primaryPalette('blue')
+ 			.accentPalette('red');
 
 
  	});
