@@ -50,7 +50,7 @@ md-card {
 
 @media screen and (min-width: 320px) and (max-width: 1280px) {
 
-	.gameCard{
+	.layout-row > .flex-45{
 		max-width: 94%; !important
 		}
     

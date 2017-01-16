@@ -61,11 +61,11 @@
  				<md-card class="gameCard" ng-repeat="game in games | filter: search.name | filter : genre | filter: gamesRating" flex="45" style="margin: 50px 20px;" >
  					<md-card-content>
  						<div class="md-padding" layout="row" layout-wrap>
- 							<div flex="45">
+ 							<div flex="35">
  								<img ng-src="{{ game.image }}" style="margin-top: -52px; box-shadow: 0px 5px 20px rgba(158,158,158,0.5); width: 130px; max-height:200px;">
  							</div>
- 							<div class="ui rating" data-rating="3" data-max-rating="5"></div>
- 							<div class="classified-info" flex=45" class="md-padding">
+ 							
+ 							<div class="classified-info" flex=60" class="md-padding">
 
  								<h2 class="md-title"  style="font-size: 32px;">{{ game.name }}</h2>
  								<h4 style="font-size: 16px; font-weight: 100;"> by {{ game.developer}} </h4>
