@@ -6,12 +6,13 @@
 		.module("ngGamebase")
 		.controller("baseCtrl", function($scope, $http, gamesFactory) {
 
-			$scope.slides = [];
 			
+
 			gamesFactory.getGames().then(function(games) {
 
 				 $scope.games = games.data;
 				 $scope.genres = getGenres($scope.games);
+				 $scope.covers = getCovers($sccope.games);
 
 
 			});
@@ -34,6 +35,18 @@
 			  }
 			
 		}); 
+
+			function getCover(games){
+				
+				var covers= []
+
+				angular.forEach(games, function(cover){
+
+					 covers.push(cover);
+
+				});
+
+			}
 
 		
 	 	
