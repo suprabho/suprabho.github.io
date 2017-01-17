@@ -12,7 +12,7 @@
 
 				 $scope.games = games.data;
 				 $scope.genres = getGenres($scope.games);
-				 $scope.covers = getCovers($scope.games);
+				 $scope.slides = getCovers($scope.games);
 
 
 			});
@@ -38,11 +38,11 @@
 
 			function getCovers(games){
 				
-				var covers= []
+				var slides= [];
 
 				angular.forEach(games, function(cover){
 
-					 covers.push(cover);
+					 slides.push(cover);
 
 				});
 
