@@ -21,9 +21,9 @@
 	<div flex="100">
  		
  		
- 		<jk-carousel style="width: 100%; height: auto">
+ 		<jk-carousel data="game in games">
  			<div>
-  				<img ng-src="{{game.cover}}" >
+  				<img ng-src="{{game.cover}}" style="width: 100%; height: auto">
 			</div>
 			<div style="font-family: 'Montserrat'; position: absolute; top: 90px; left: 141px; ">
  			<h1 style=" font-size: 5em; letter-spacing: 0.2em; font-weight: 700; text-shadow: 0 1px 7px #18ffff; color: #fff; margin-bottom: 5px;">{{game.name}}</h1>
