@@ -22,18 +22,25 @@
 
 	<div flex="100">
  		
+ 		<ul rn-carousel rn-carousel-buffered class="page-container" ng-class="{blurred: blurred}">
+        	<li ng-repeat="game in games">
+        		<div class="img loading" lazy-loading-class="loading" lazy-loaded-class="loaded">
+  					
+  					<img ng-src="{{game.cover}}" style="width: 100%; height: auto">
+				
+					<div style="font-family: 'Montserrat'; position: absolute; top: 90px; left: 141px; ">
+ 				
+ 						<h1 style=" font-size: 5em; letter-spacing: 0.2em; font-weight: 700; text-shadow: 0 1px 7px #18ffff; color: #fff; margin-bottom: 5px;">{{game.name}}</h1>
+ 						<md-button class="md-raised" ng-href="{{game.trailer}}" target="_blank" style="background: -moz-linear-gradient(left, #00bcd4 0%, #18ffff 100%); 	background: -webkit-linear-gradient(left, #00bcd4 0%,#18ffff 100%); 
+						background: linear-gradient(to right, #00bcd4 0%,#18ffff 100%); padding: 10px 50px;
+   						border-radius: 36px; font-size: 24px;"> Watch Trailer <md-icon class="mdi mdi-arrow-right-drop-circle-outline" style=" height: 36px;"></md-icon>
+		  				</md-button>
+		  			</div>
+          		</div>
+        </li>
+      </ul>
+
  		
- 		<jk-carousel data="game in games">
- 			<div>
-  				<img ng-src="{{game.cover}}" style="width: 100%; height: auto">
-			</div>
-			<div style="font-family: 'Montserrat'; position: absolute; top: 90px; left: 141px; ">
- 			<h1 style=" font-size: 5em; letter-spacing: 0.2em; font-weight: 700; text-shadow: 0 1px 7px #18ffff; color: #fff; margin-bottom: 5px;">{{game.name}}</h1>
- 			<md-button class="md-raised" ng-href="{{game.trailer}}" target="_blank" style="background: -moz-linear-gradient(left, #00bcd4 0%, #18ffff 100%); 	background: -webkit-linear-gradient(left, #00bcd4 0%,#18ffff 100%); 
-				background: linear-gradient(to right, #00bcd4 0%,#18ffff 100%); padding: 10px 50px;
-   				border-radius: 36px; font-size: 24px;"> Watch Trailer <md-icon class="mdi mdi-arrow-right-drop-circle-outline" style=" height: 36px;"></md-icon>
-		  </md-button>
-        </jk-carousel>
  		
 		  
 
