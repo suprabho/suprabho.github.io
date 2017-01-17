@@ -7,14 +7,14 @@
 		.controller("baseCtrl", function($scope, $http, gamesFactory) {
 
 			gamesFactory.getGames().then(function(games) {
-
+				
 				 $scope.games = games.data;
 				 $scope.genres = getGenres($scope.games);
-				 $scope.slides = [];
+				 
 
 			});
 
-			
+			$scope.slides = [];
 
 			function getGenres(games) {
 
