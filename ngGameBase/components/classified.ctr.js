@@ -12,7 +12,7 @@
 
 				 $scope.games = games.data;
 				 $scope.genres = getGenres($scope.games);
-				 
+				 $scope.slides = getCovers($scope.games);
 
 
 			});
