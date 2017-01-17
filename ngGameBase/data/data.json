@@ -8,7 +8,9 @@
     "genres": [
       "Sports"
     ],
-    "image": "https://www.pccdkeys.com/wp-content/uploads/2016/04/out-of-the-park-baseball-17-cd-key-for-steam.jpg"
+    "image": "https://www.pccdkeys.com/wp-content/uploads/2016/04/out-of-the-park-baseball-17-cd-key-for-steam.jpg",
+    "cover": "http://www.couchathleten.de/wp-content/uploads/OOTP17-1.jpg",
+    "trailer": "https://www.youtube.com/watch?v=NGaIt0ymSWs"
   },
   {
     "rank": 2,
@@ -20,7 +22,9 @@
       "Action",
       "Role Playing"
     ],
-    "image": "http://myfullgames.com/wp-content/uploads/2016/05/The_Witcher_3_Blood_and_Wine_cover.jpg"
+    "image": "http://myfullgames.com/wp-content/uploads/2016/05/The_Witcher_3_Blood_and_Wine_cover.jpg",
+    "cover": "http://vignette1.wikia.nocookie.net/witcher/images/d/df/Toussaint_is_full_of_places_just_waiting_to_be_discovered.png/revision/latest?cb=20160424210508",
+    "trailer": "https://www.youtube.com/watch?v=zMSYP1FIffM"
   },
   {
     "rank": 3,
@@ -32,7 +36,9 @@
       "Action",
       "First Person Shooting"
     ],
-    "image": "http://gamepreorders.com/wp-content/uploads/2016/03/overwatch-cover.jpg"
+    "image": "http://gamepreorders.com/wp-content/uploads/2016/03/overwatch-cover.jpg",
+    "cover": "https://i.ytimg.com/vi/UEYp1RTvllM/maxresdefault.jpg",
+    "trailer": "https://www.youtube.com/watch?v=FqnKB22pOC0"
   },
   {
     "rank": 4,
@@ -43,7 +49,9 @@
     "genres": [
       "Strategy"
     ],
-    "image": "http://www.stephenssausageroll.com/images/1.jpg"
+    "image": "http://www.stephenssausageroll.com/images/1.jpg",
+    "cover": "https://killscreen.com/wp-content/uploads/2016/04/ss_e3ca1318f30306b132a1eba2624ccd6bc1aba0d1.1920x1080.jpg",
+    "trailer": "https://www.youtube.com/watch?v=lCNqYLGwqxU"
   },
   {
     "rank": 5,
@@ -54,7 +62,9 @@
     "genres": [
       "Adventure"
     ],
-    "image": "http://i.imgur.com/Xj8oqVI.jpg"
+    "image": "http://i.imgur.com/Xj8oqVI.jpg",
+    "cover": "http://static1.gamespot.com/uploads/original/1406/14063904/3104954-krzact4-5.jpg",
+    "trailer": "https://www.youtube.com/watch?v=g8VY3JgF1pM"
   },
   {
     "rank": 6,
@@ -66,7 +76,9 @@
       "Action",
       "Role Playing"
     ],
-    "image": "http://cdn.wccftech.com/wp-content/uploads/2015/06/Dark-Souls-III-19.jpg"
+    "image": "http://cdn.wccftech.com/wp-content/uploads/2015/06/Dark-Souls-III-19.jpg",
+    "cover": "http://www.cgmagonline.com/wp-content/uploads/2016/04/dark-souls-3-ps4-review-2.jpg",
+    "trailer": "https://www.youtube.com/watch?v=_zDZYrIUgKE"
   },
   {
     "rank": 7,
@@ -78,7 +90,9 @@
       "Adventure ",
       "Platform"
     ],
-    "image": "http://www.gry-online.pl/galeria/gry13/587953790.jpg"
+    "image": "http://www.gry-online.pl/galeria/gry13/587953790.jpg",
+    "cover": "http://static5.gamespot.com/uploads/screen_kubrick/mig/7/1/4/1/2897141-owlboy.jpg",
+    "trailer": "https://www.youtube.com/watch?v=0N4lp01tFwg"
   },
   {
     "rank": 8,
@@ -89,7 +103,9 @@
     "genres": [
       "Role Playing"
     ],
-    "image": "https://i.imgur.com/wZwtZwr.jpg"
+    "image": "https://i.imgur.com/wZwtZwr.jpg",
+    "cover": "http://stardewvalley.net/wp-content/uploads/2016/09/1_1_screenshot2.png",
+    "trailer": "https://www.youtube.com/watch?v=HZ-st7cCrQA"
   },
   {
     "rank": 9,
@@ -102,7 +118,9 @@
       "Strategy",
       "Adventure"
     ],
-    "image": "http://vignette2.wikia.nocookie.net/nohud/images/d/d5/Ori_and_the_Blind_Forest_cover.jpg/revision/latest?cb=20150327105211"
+    "image": "http://vignette2.wikia.nocookie.net/nohud/images/d/d5/Ori_and_the_Blind_Forest_cover.jpg/revision/latest?cb=20150327105211",
+    "cover": "http://gameranx.com/wp-content/uploads/2016/06/OriandtheBlindForestDE.jpg",
+    "trailer": "https://www.youtube.com/watch?v=Ug3WPU8yVc4"
   },
   {
     "rank": 10,
@@ -114,6 +132,8 @@
       "Action",
       "First Person Shooting"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/en/f/fc/Battlefield_1_cover_art.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/en/f/fc/Battlefield_1_cover_art.jpg",
+    "cover": "https://data1.origin.com/live/content/dam/originx/web/app/games/battlefield/battlefield-1/bf1_pdp_keyart_3840x2160_en_ww_standardedition_v1.jpg.jpg",
+    "trailer": "https://www.youtube.com/watch?v=c7nRTF2SowQ"
   }
 ]
