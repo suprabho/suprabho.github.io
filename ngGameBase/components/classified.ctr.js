@@ -6,15 +6,13 @@
 		.module("ngGamebase")
 		.controller("baseCtrl", function($scope, $http, gamesFactory) {
 
-			
+			$scope.slides = [];
 
 			gamesFactory.getGames().then(function(games) {
 
 				 $scope.games = games.data;
 				 $scope.genres = getGenres($scope.games);
-				 $scope.slides = getCovers($scope.games);
-
-
+				 
 			});
 
 			
@@ -34,17 +32,7 @@
 				return   _.uniq(genres);
 			  }
 			
-			function getCovers(games){
-				
-				var slides= [];
-
-				angular.forEach(games, function(cover){
-
-					 slides.push(cover);
-
-				});
-
-			}
+			
 		}); 
 
 			
