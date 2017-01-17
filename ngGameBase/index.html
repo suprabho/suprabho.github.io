@@ -25,8 +25,8 @@
  		
  		<ul rn-carousel rn-carousel-buffered class="page-container" ng-class="{blurred: blurred}">
         	<li ng-repeat="game in games">
-        		<div class="img loading" lazy-loading-class="loading" lazy-loaded-class="loaded">
-  					
+        		
+        		<div class="layer">		
   					<img ng-src="{{game.cover}}" style="width: 100%; height: auto">
 				
 					<div style="font-family: 'Montserrat'; position: absolute; top: 90px; left: 141px; ">
@@ -38,17 +38,13 @@
 		  				</md-button>
 		  			</div>
           		</div>
+          	
         </li>
       </ul>
-
- 		
- 		
-		  
-
-	  </div>
+	</div>
 
 
- 	</div>
+ 	
 
 
 	<md-card flex="80" class="base" style="margin: 10px auto; background: #f5f5f5; position: relative; z-index: 3; margin-top: -200px; border-radius: 10px;
