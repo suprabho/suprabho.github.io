@@ -6,15 +6,17 @@
 		.module("ngGamebase")
 		.controller("baseCtrl", function($scope, $http, gamesFactory) {
 
+			$scope.slides = [];
+			
 			gamesFactory.getGames().then(function(games) {
-				
+
 				 $scope.games = games.data;
 				 $scope.genres = getGenres($scope.games);
-				 
+
 
 			});
 
-			$scope.slides = [];
+			
 
 			function getGenres(games) {
 
