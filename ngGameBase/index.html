@@ -5,12 +5,9 @@
 		
 		<link rel="stylesheet" type="text/css" href="node_modules/angular-material/angular-material.css">
 		<link href="node_modules/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" >
-		<link href="node_modules/angular-carousel/dist/angular-carousel.css" media="all" rel="stylesheet" type="text/css" >
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
-		
-		
 		
     	
 		
@@ -22,30 +19,21 @@
 	background: linear-gradient(to right, #00bcd4 0%,#18ffff 100%); height: auto; margin: -10px;">
 
 	<div flex="100">
+ 		
+ 		<img ng-src="https://data1.origin.com/live/content/dam/originx/web/app/games/battlefield/battlefield-1/bf1_pdp_keyart_3840x2160_en_ww_standardedition_v1.jpg.jpg" >
+ 		
+ 		<div style="font-family: 'Montserrat'; position: absolute; top: 90px; left: 141px; ">
+ 			<h1 style=" font-size: 5em; letter-spacing: 0.2em; font-weight: 700; text-shadow: 0 1px 7px #18ffff; color: #fff; margin-bottom: 5px;">BATTLEFIELD 1</h1>
+ 			<md-button class="md-raised" ng-href="https://www.youtube.com/watch?v=c7nRTF2SowQ" target="_blank" style="background: -moz-linear-gradient(left, #00bcd4 0%, #18ffff 100%); 	background: -webkit-linear-gradient(left, #00bcd4 0%,#18ffff 100%); 
+				background: linear-gradient(to right, #00bcd4 0%,#18ffff 100%); padding: 10px 50px;
+   				border-radius: 36px; font-size: 24px;"> Watch Trailer <md-icon class="mdi mdi-arrow-right-drop-circle-outline" style=" height: 36px;"></md-icon>
+		  </md-button>
+		  
 
-				
- 		<ul rn-carousel rn-carousel-buffered rn-carousel-auto-slide rn-carousel-controls-allow-loop rn-carousel-duration rn-carousel-easing>
-        	<li ng-repeat="game in games">
-        		
-        		<div class="layer">		
-  					<img ng-src="{{ game.cover }}" style="width: 100%; height: auto">
-				
-					<!-- <div style="font-family: 'Montserrat'; position: absolute; top: 90px; left: 141px; ">
- 				
- 						<h1 style=" font-size: 5em; letter-spacing: 0.2em; font-weight: 700; text-shadow: 0 1px 7px #18ffff; color: #fff; margin-bottom: 5px;">{{ game.name }}</h1>
- 						<md-button class="md-raised" ng-href="{{ game.trailer }}" target="_blank" style="background: -moz-linear-gradient(left, #00bcd4 0%, #18ffff 100%); 	background: -webkit-linear-gradient(left, #00bcd4 0%,#18ffff 100%); 
-						background: linear-gradient(to right, #00bcd4 0%,#18ffff 100%); padding: 10px 50px;
-   						border-radius: 36px; font-size: 24px;"> Watch Trailer <md-icon class="mdi mdi-arrow-right-drop-circle-outline" style=" height: 36px;"></md-icon>
-		  				</md-button>
-		  			</div> -->
-          		</div>
-          	
-        	</li>
-      	</ul>
-	</div>
+	  </div>
 
 
- 	
+ 	</div>
 
 
 	<md-card flex="80" class="base" style="margin: 10px auto; background: #f5f5f5; position: relative; z-index: 3; margin-top: -200px; border-radius: 10px;
@@ -118,9 +106,5 @@
 	 <script src="node_modules/angular-aria/angular-aria.js"></script>
 	 <script src="node_modules/angular-material/angular-material.js"></script>
   	 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.3/lodash.js"></script>
-  	 <script src="node_modules/angular-touch/angular-touch.js"></script>
-	 <script src="node_modules/angular-carousel/dist/angular-carousel.js"></script>
-	 
-
   	 
 </html> 

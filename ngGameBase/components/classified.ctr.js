@@ -6,7 +6,7 @@
 		.module("ngGamebase")
 		.controller("baseCtrl", function($scope, $http, gamesFactory) {
 
-			$scope.slides = [];
+			
 
 			gamesFactory.getGames().then(function(games) {
 
