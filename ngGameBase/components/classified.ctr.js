@@ -12,7 +12,7 @@
 
 				 $scope.games = games.data;
 				 $scope.genres = getGenres($scope.games);
-				 $scope.slides = getCovers($scope.games);
+				 
 
 
 			});
@@ -34,8 +34,6 @@
 				return   _.uniq(genres);
 			  }
 			
-		}); 
-
 			function getCovers(games){
 				
 				var slides= [];
@@ -47,6 +45,9 @@
 				});
 
 			}
+		}); 
+
+			
 
 		
 	 	
