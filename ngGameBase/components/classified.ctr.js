@@ -36,7 +36,7 @@
 			
 		}); 
 
-			function getCover(games){
+			function getCovers(games){
 				
 				var covers= []
 
