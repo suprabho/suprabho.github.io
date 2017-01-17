@@ -1,5 +1,5 @@
  angular
- 	.module("ngGamebase", ["ngMaterial" , "angular-carousel", "angular-carousel.shifty"])
+ 	.module("ngGamebase", ["ngMaterial" , "angular-carousel", "ngTouch"])
  	.config(function($mdThemingProvider) {  
 
  		$mdThemingProvider.theme('default')
