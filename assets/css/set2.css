@@ -1,3 +1,8 @@
+.image{
+	overflow: hidden;
+    width: 100%;
+}
+
 .grid {
 	position: relative;
 		clear: both;
