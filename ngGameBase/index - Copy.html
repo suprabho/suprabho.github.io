@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Game Base </title>
+		
+		<link rel="stylesheet" type="text/css" href="node_modules/angular-material/angular-material.css">
+		<link href="node_modules/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" >
+		<link href="node_modules/angular-carousel/dist/angular-carousel.css" media="all" rel="stylesheet" type="text/css" >
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+		
+		
+		
+    	
+		
+
+	</head>
+
+	<body ng-app="ngGamebase" ng-controller="baseCtrl" style="background: -moz-linear-gradient(left, #00bcd4 0%, #18ffff 100%); 
+	background: -webkit-linear-gradient(left, #00bcd4 0%,#18ffff 100%); 
+	background: linear-gradient(to right, #00bcd4 0%,#18ffff 100%); height: auto; margin: -10px;">
+
+	<div flex="100">
+ 		
+ 		<ul rn-carousel rn-carousel-buffered rn-carousel-auto-slide rn-carousel-controls-allow-loop rn-carousel-duration rn-carousel-easing>
+        	<li ng-repeat="game in games">
+        		
+        		<div class="layer">		
+  					<img ng-src="{{ game.cover }}" style="width: 100%; height: auto">
+				
+					<div style="font-family: 'Montserrat'; position: absolute; top: 90px; left: 141px; ">
+ 				
+ 						<h1 style=" font-size: 5em; letter-spacing: 0.2em; font-weight: 700; text-shadow: 0 1px 7px #18ffff; color: #fff; margin-bottom: 5px;">{{ game.name }}</h1>
+ 						<md-button class="md-raised" ng-href="{{ game.trailer }}" target="_blank" style="background: -moz-linear-gradient(left, #00bcd4 0%, #18ffff 100%); 	background: -webkit-linear-gradient(left, #00bcd4 0%,#18ffff 100%); 
+						background: linear-gradient(to right, #00bcd4 0%,#18ffff 100%); padding: 10px 50px;
+   						border-radius: 36px; font-size: 24px;"> Watch Trailer <md-icon class="mdi mdi-arrow-right-drop-circle-outline" style=" height: 36px;"></md-icon>
+		  				</md-button>
+		  			</div>
+          		</div>
+          	
+        	</li>
+      	</ul>
+	</div>
+
+
+ 	
+
+
+	<md-card flex="80" class="base" style="margin: 10px auto; background: #f5f5f5; position: relative; z-index: 3; margin-top: -200px; border-radius: 10px;
+    box-shadow: 1px 0px 30px 0px rgba(63,63,63, 0.5);" >
+		<md-card-content style="color:#424242;">
+			
+			<div class="md-toolbar-tools" style="font-family:'Oswald';">
+				<h2 style="margin-right: 60px; background: #f5f5f5;  font-family:'Oswald';">Popular by genres</h2>
+ 				
+ 				<md-select ng-model="genre">
+ 					<md-option ng-repeat="genre in genres" value="{{ genre }}">{{ genre }}</md-option>
+ 				</md-select>
+ 				
+            </div>
+ 			
+ 			<md-toolbar>
+ 			<md-content class="md-padding" layout="row" layout-wrap style="padding-top: 35px; background: #f5f5f5;">
+ 			
+ 				<md-slider-container  flex="35">
+      				<span>Rating</span>
+      				<md-slider flex class="md-primary" flex min="88" max="92" ng-model="gamesRating" aria-label="rating" id="rating">
+     				 </md-slider>
+      				<md-input-container>
+        				<input  flex type="number" ng-model="gamesRating" aria-label="rating" id="rating">
+     			 	</md-input-container>
+     			</md-slider-container>
+     			 
+     			 <md-input-container flex="40" class="search" style="margin-top: 0px; top: 25px;">
+     			 	<md-icon class="mdi mdi-magnify"></md-icon>
+        			<input ng-model="search.name">
+      			</md-input-container>
+
+      			 <md-input-container flex="10" class="search">
+     			 	<md-button class="md-accent" ng-click="gamesRating =''; searchGames=''; genre='';" style="border: solid 1px; margin-top: 35px;     right: 60%;"> Clear <md-icon class="mdi mdi-close-circle"></md-icon></md-button>
+      			</md-input-container>
+     		
+     		</md-content>
+    		</md-toolbar>
+
+ 			<md-content class="md-padding" layout="row" layout-wrap style="background: #f5f5f5; color: #424242;">
+ 				<md-card class="gameCard" ng-repeat="game in games | filter: search.name | filter : genre | filter: gamesRating" flex="45" style="margin: 50px 20px;" >
+ 					<md-card-content>
+ 						<div class="md-padding" layout="row" layout-wrap>
+ 							<div flex="35">
+ 								<img ng-src="{{ game.image }}" style="margin-top: -52px; margin-left: -20px; box-shadow: 0px 5px 20px rgba(158,158,158,0.5); width: 160px; max-height:250px; ">
+ 							</div>
+ 							
+ 							<div class="classified-info" flex=60" class="md-padding">
+
+ 								<h2 class="md-title"  style="font-size: 32px;">{{ game.name }}</h2>
+ 								<h4 style="font-size: 16px; "> by {{ game.developer}} </h4>
+ 							</div>
+ 						</div>
+ 						<div class="classified-description">
+ 							<p style="font-weight: 300; font-size: 18px; padding: 20px;"> {{ game.description }} </p>
+ 						</div>
+ 					</md-card-content>
+				</md-card>
+			
+			</md-content>
+		</md-card-content>
+ 	</md-card>
+ 		
+
+	 <script src="node_modules/angular/angular.js"></script>
+	 <script src="scripts/app.js"></script>
+	 <script src="components/classified.ctr.js"></script>
+	 <script src="components/classifieds.fac.js"></script>
+	 <script src="node_modules/angular-animate/angular-animate.js"></script>
+	 <script src="node_modules/angular-aria/angular-aria.js"></script>
+	 <script src="node_modules/angular-material/angular-material.js"></script>
+  	 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.3/lodash.js"></script>
+  	 <script src="node_modules/angular-touch/angular-touch.js"></script>
+	 <script src="node_modules/angular-carousel/dist/angular-carousel.js"></script>
+	 
+
+  	 
+</html> 
