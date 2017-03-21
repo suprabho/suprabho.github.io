@@ -3,6 +3,9 @@
     width: 100%;
 }
 
+.embed-container {
+    margin: 0;
+}
 .grid {
 	position: relative;
 		clear: both;
