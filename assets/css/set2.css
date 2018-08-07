@@ -15,6 +15,12 @@
 	text-align: center;
 }
 
+.nav>li:hover {
+    
+    background: #FC5157;
+   border-radius: 5px;
+}
+
 /* Common style */
 .grid figure {
 	position: relative;
