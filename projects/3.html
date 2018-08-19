@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" href="assets/img/favicon.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Design @ Cubical Labs</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+	<!--     Fonts and icons     -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+	<!-- CSS Files -->
+	<link rel="stylesheet" type="text/css" href="../assets/css/normalize.css" />
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/material-kit.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="../assets/css/set2.css" />
+
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link href="../assets/css/demo.css" rel="stylesheet" />
+
+</head>
+
+<body class="index-page body-inside">
+<!-- Navbar -->
+<nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
+	<div class="container">
+        <div class="navbar-header">
+	    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
+	        	<span class="sr-only">Toggle navigation</span>
+	        	<span class="icon-bar"></span>
+	        	<span class="icon-bar"></span>
+	        	<span class="icon-bar"></span>
+	    	</button>
+	    	<a href="http://suprabho.github.io">
+	        	<div class="logo-container">
+	                <div class="logo">
+	                    <img src="../assets/img/logo.png" alt="Yo!" rel="tooltip" title="<b>Suprabho Dhenki's works</b>" data-placement="bottom" data-html="true">
+	                </div>
+	                <div class="brand">
+	                    shu.pro.bho
+	                </div>
+
+
+				</div>
+	      	</a>
+	    </div>
+
+	    <div class="collapse navbar-collapse" id="navigation-index">
+	    	<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="#" target="_blank">
+						<i class="material-icons">dashboard</i>Resume
+					</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">
+						<i class="material-icons"></i> About me
+					</a>
+				</li>
+				<li>
+					<a href="#" target="http://suprabho.github.io">
+						<i class="material-icons"></i> Home
+					</a>
+				</li>
+				
+
+	    	</ul>
+	    </div>
+	</div>
+</nav>
+<!-- End Navbar -->
+
+<div class="wrapper">
+	<div class="header header-filter" style="background-image: url('img/bg2.jpg');">
+		<div class="container">
+			<div class="row" style="margin-top:-70px;">
+				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-lg-offset-1">
+					<div class="brand">
+						<h1><span>@Cubical Labs</span></h1><br>
+						<h2></h2>
+						
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="main-inside main-raised" style="margin-top: -320px;">
+
+		
+		<div class ="section">
+			<div class="container row">
+				<div class="col-md-10 col-md-offset-1" style="padding: 0px">
+					<img class="image" src="img/3.0.png">
+					<video width="100%" height="100%" controls>
+  						<source src="img/CubicalDataAnalytics.mp4" type="video/mp4">
+  						
+					</video>
+					<img class="image" src="img/analytics1.png">
+
+					
+	       		</div>
+	       	</div>
+		</div>
+	</div>
+		
+    </div>    
+</div>
+</body>
+	<!--   Core JS Files   -->
+	<script src="../assets/js/jquery.min.js" type="text/javascript"></script>
+	<script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="../assets/js/material.min.js"></script>
+
+	<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+	<script src="../assets/js/nouislider.min.js" type="text/javascript"></script>
+
+	<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
+	<script src="../assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
+
+	<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
+	<script src="../assets/js/material-kit.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+
+		$().ready(function(){
+			// the body of this function is in assets/material-kit.js
+			
+            window_width = $(window).width();
+
+            if (window_width >= 992){
+                big_image = $('.wrapper > .header');
+
+				$(window).on('scroll', materialKitDemo.checkScrollForParallax);
+			}
+
+		});
+	</script>
+</html>
