@@ -1,8 +1,10 @@
 .para span{
-	background-color: #FC5157;
+	
 	font-style: italic;
 	font-weight: 400;
-	color:#333;
+	color:#FC5157;
+	padding: 2px;
+	
 }
 
 .image{
