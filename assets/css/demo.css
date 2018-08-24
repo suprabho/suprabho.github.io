@@ -65,13 +65,15 @@
  .title-center{
     
     margin-bottom: 25px;
+    margin-bottom: 40px; 
     min-height: 32px;
     margin-left: 15px;
     margin-right: 15px;
     color: #F5F5F5;
-    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-
+    
 }
+
+
  .title-right{
     margin-left: 20%;
     margin-right: -20px;
@@ -145,10 +147,12 @@
         font-size: 2em;       
         line-height: 1.2em;
     }
-
+    .title-center{
+        margin-bottom: 5px;
+    }
     .title-center h2 {
         padding-right:0; 
-        margin: auto;
+        margin-bottom: auto;
          font-size: 2em;
      }
 
@@ -490,15 +494,7 @@
   -webkit-transition: 1.5s ease-in-out;
 }
 
-.navbar-default.navbar-small .logo-container .brand{
-    color: #333333;
-}
-.navbar-transparent.navbar-small .logo-container .brand{
-    color: #FFFFFF;
-}
-.navbar-default.navbar-small .logo-container .brand{
-    color: #333333;
-}
+
 
 .sharing-area{
     margin-top: 80px;
