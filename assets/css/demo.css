@@ -494,7 +494,15 @@
   -webkit-transition: 1.5s ease-in-out;
 }
 
-
+.navbar-default.navbar-small .logo-container .brand{
+    color: #333333;
+}
+.navbar-transparent.navbar-small .logo-container .brand{
+    color: #FFFFFF;
+}
+.navbar-default.navbar-small .logo-container .brand{
+    color: #333333;
+}
 
 .sharing-area{
     margin-top: 80px;
