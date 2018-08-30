@@ -121,6 +121,7 @@ h2, h4{
 
 .st-scroll,
 .st-panel {
+	padding-top: 100px;
 	position: relative;
 	width: 100%;
 	height: 100%;
