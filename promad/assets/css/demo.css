@@ -32,6 +32,10 @@
     height: 100%;
 }
 
+.nav>li>a:hover, .nav>li>a:focus
+{
+    color: #231f20;
+}
 .navbar .navbar-nav > li > a{
     text-align: center; 
 }
