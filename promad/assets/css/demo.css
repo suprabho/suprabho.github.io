@@ -1,6 +1,6 @@
 .line {
   stroke-dasharray: 80;
-  animation: draw 2s infinite; 
+  animation: draw 2s linear infinite; 
 }
 
 @keyframes draw {
