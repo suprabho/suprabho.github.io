@@ -1,3 +1,21 @@
+.line {
+  stroke-dasharray: 80;
+  animation: draw 2s infinite; 
+}
+
+@keyframes draw {
+  from {
+    stroke-dashoffset: 0
+  }
+  to {
+    stroke-dashoffset: 150;
+  }
+}
+
+
+
+
+
 .embed-container {
     margin: 90px 0;
     position: relative;
