@@ -8,6 +8,7 @@ footer .copyright, footer ul li
 
 .navbar.navbar-transparent, .navbar.navbar-transparent .logo-container .brand{
 	color: #231f20;
+	font-weight: 900;
 }
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
 	color: rgba(245,245,245,1);
