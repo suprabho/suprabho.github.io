@@ -1,12 +1,13 @@
 
 .main
-{background: #F6F7F9;}
+   
+{background: #f6f7f9b3;}
 .navbar, .navbar.navbar-default 
 {
     background-color: #0077FF;
     color: #ffffff;}
 .navbar-nav>li:hover {
-    background: #F6F7F9;
+    background: #f6f7f9;
     color: #0077FF;}
 
 body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
@@ -14,7 +15,30 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
     font-weight: 300;
     line-height: 1.5em;}
 
+    .nav-tabs>li>a   {
+        font-family: "Rubik", "Avenir", "Century Gothic", sans-serif;
+        line-height: 24px;
+    text-transform: none;
+    font-size: 24px;
+    } 
+    .nav-tabs> li.active > a, .nav-tabs>li.active>a:hover {
+        color: #0077FF;}
+        
+
+    .nav-items .active{
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        border-image: linear-gradient(to right, #0077FF, #1AFFFF );
+        -webkit-border-image:linear-gradient(to right, #0077FF, #1AFFFF ) ;
+    }
+
+    .nav-tabs>li >a{
+        color: #0077FF;
+    }
+
 @media (min-width: 1200px)
 .container {
                 width: 98%;
             }
+
+            
