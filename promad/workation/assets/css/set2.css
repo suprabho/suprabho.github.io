@@ -1,9 +1,9 @@
 footer .copyright, footer ul li
 {
-	color:#eee33d;
+	color:#0077ff;
 }
 .para a{
-	color:#eee33d;
+	color:#0077ff;
 }
 
 .navbar.navbar-transparent, .navbar.navbar-transparent .logo-container .brand{
@@ -12,7 +12,7 @@ footer .copyright, footer ul li
 }
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
 	color: rgba(245,245,245,1);
-    background: rgba(10,96,100,0.5);
+    background: #0077FF;
 }
 
 .p{
@@ -23,7 +23,7 @@ footer .copyright, footer ul li
 	
 	font-style: italic;
 	font-weight: 400;
-	color:#eee33d;
+	color:#0077ff;
 	padding: 2px;
 	
 }
@@ -40,14 +40,14 @@ footer .copyright, footer ul li
 	position: relative;
 	clear: both;
 	margin: 0 auto;
-	max-width: 1000px;
+	max-width: 100%;
 	list-style: none;
 	text-align: center;
 }
 
 .navbar-nav>li:hover {
     
-   background: #eee33d;
+   background: #0077ff;
    color: #231f30;
    border-radius: 5px;
 
@@ -63,8 +63,9 @@ footer .copyright, footer ul li
 	position: relative;
 	float: left;
 	overflow: hidden;
-	margin: 20px 4%;
-	min-width: 320px;
+	margin: 20px 20px;
+	width: 30%;
+	 min-width: 320px;
 	max-width: 480px;
 	max-height: 360px;
 	border-radius: 6px;
@@ -123,7 +124,7 @@ footer .copyright, footer ul li
 
 .grid figure h2 span {
 	font-weight: 800;
-	background-color: #eee33d;
+	background-color: #0077ff;
 	padding: 2px 10px;
 }
 
@@ -227,7 +228,7 @@ figure.effect-julia:hover p {
 /*-----------------*/
 
 figure.effect-goliath {
-	background: #2FAA97;
+	background: #0077FF;
 	
 }
 

@@ -23,6 +23,7 @@
  *         \  \ `_.   \_ __\ /__ _/   .-` /  /
  *     =====`-.____`.___ \_____/___.-`___.-'=====
  *                       `=---='
+
  *
  *     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  *
@@ -33,13 +34,13 @@
 /* SHADOWS */
 /* Shadows (from mdl http://www.getmdl.io/) */
 body {
-  background-color: #151515;
+  background-color: #000000;
 }
 .body-inside {
   background-color: #D4DADC;
 }
 body.inverse {
-  background: #333333;
+  background: #F6F7F9;
 }
 body.inverse, body.inverse .form-control {
   color: #ffffff;
@@ -2562,7 +2563,7 @@ legend {
   height: 10px;
   border-radius: 5px;
   box-shadow: none;
-  background: #151515;
+  background: #000000;
 }
 .progress .progress-bar {
   box-shadow: none;
@@ -3620,7 +3621,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 
 .card .header-success{
-   background: linear-gradient(45deg, #2FAA97, #3FE2C9);
+   background: linear-gradient(45deg,#0077FF , #1AFFFF 150%);
 }
 .description {
   color: #999999;

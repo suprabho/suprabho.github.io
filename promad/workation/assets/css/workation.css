@@ -1,0 +1,20 @@
+
+.main
+{background: #F6F7F9;}
+.navbar, .navbar.navbar-default 
+{
+    background-color: #0077FF;
+    color: #ffffff;}
+.navbar-nav>li:hover {
+    background: #F6F7F9;
+    color: #0077FF;}
+
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
+    font-family: "Rubik", "Avenir", "Century Gothic", sans-serif;
+    font-weight: 300;
+    line-height: 1.5em;}
+
+@media (min-width: 1200px)
+.container {
+                width: 98%;
+            }
