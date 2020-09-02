@@ -1,7 +1,12 @@
 
-.main
-   
-{background: #f6f7f9b3;}
+body{
+    background: linear-gradient(45deg, #0077FF, #1AFFFF 150% ) ;
+    
+}
+   .shadowyText{
+       text-shadow: 0 3px 8px rgba(0, 119, 255, 0.72);
+   }
+
 .navbar, .navbar.navbar-default 
 {
     background-color: #0077FF;
