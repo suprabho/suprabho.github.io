@@ -26,11 +26,11 @@
     <script src="https://unpkg.com/@rive-app/canvas@2.20.0"></script>
 	<script>
 		const r = new rive.Rive({
-		  src: "https://cdn.rive.app/animations/vehicles.riv",
+		  src: "./mascot.riv",
 		  canvas: document.getElementById("canvas"),
 		  autoplay: true,
 		  // artboard: "Arboard", // Optional. If not supplied the default is selected
-		  stateMachines: "bumpy",
+		  stateMachines: "State Machine Main",
 		  onLoad: () => {
 			// Ensure the drawing surface matches the canvas size and device pixel ratio
 			r.resizeDrawingSurfaceToCanvas();
