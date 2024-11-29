@@ -106,7 +106,22 @@
 			<div class="container row">
 				<div class="col-md-10 col-md-offset-1" style="padding: 0px">
 					<div class="col-md-12" style="padding: 0px"></div>
-						<canvas style="position: absolute; height: 500px;  width: 100%; background-color: black;" id="rive-canvas"></canvas>
+					<canvas id="canvas" width="500" height="500"></canvas>
+
+					<script src="https://unpkg.com/@rive-app/canvas@2.20.0"></script>
+					<script>
+					  const r = new rive.Rive({
+						src: "https://cdn.rive.app/animations/vehicles.riv",
+						canvas: document.getElementById("canvas"),
+						autoplay: true,
+						// artboard: "Arboard", // Optional. If not supplied the default is selected
+						stateMachines: "bumpy",
+						onLoad: () => {
+						  // Ensure the drawing surface matches the canvas size and device pixel ratio
+						  r.resizeDrawingSurfaceToCanvas();
+						},
+					  });
+					</script>
 					</div>
 					<img class="image" src="assets/img/1.png">
               		<div class="embed-container" style="height=95%; margin: 0">
