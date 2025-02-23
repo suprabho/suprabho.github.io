@@ -1,7 +1,8 @@
 {
-    "name": "rive-quick-start-react",
+    "name": "ovo-app",
     "version": "1.0.0",
     "description": "",
+    "homepage": "https://suprabho.github.io/ovo-app",
     "keywords": [],
     "main": "src/index.js",
     "dependencies": {
