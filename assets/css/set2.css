@@ -1,6 +1,9 @@
 .para a{
 	color:#FC5157;
 }
+
+
+
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
 	color: rgba(245,245,245,1);
     background: rgba(10,96,100,0.5);
