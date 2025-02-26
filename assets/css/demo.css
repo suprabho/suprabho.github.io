@@ -96,18 +96,14 @@
 .title h2 {
    
     color: #FFFFFF;
-    
     font-size: 3.6em;
     font-weight: 600;
 }
 .title-center h2 {
-   
-   
     padding-right: 40px;
     font-size: 3.6em;
     font-weight: 600;
     text-align: center; !important
-
 }
 
 @media (max-width: 992px){
