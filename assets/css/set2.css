@@ -2,11 +2,6 @@
 	color:#FC5157;
 }
 
-.navbar-nav > li > a.nav-link {
-	display: flex;
-	align-items: center;  
-}
-
 .ph-fill {
 	font-size: 32px;
   }
