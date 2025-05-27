@@ -1,0 +1,253 @@
+/* Core styles from set2.css */
+
+.para a {
+    color: #FC5157;
+}
+
+.ph-fill {
+    font-size: 16px;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a:focus {
+    color: rgba(245, 245, 245, 1);
+    background: rgba(10, 96, 100, 0.5);
+}
+
+.p {
+    text-align: left;
+}
+
+.para span {
+    font-style: italic;
+    font-weight: 400;
+    color: #FC5157;
+    padding: 2px;
+}
+
+.image {
+    overflow: hidden;
+    width: 100%;
+}
+
+.embed-container {
+    margin: 0;
+}
+
+
+/* Grid styles */
+
+.grid {
+    position: relative;
+    clear: both;
+    margin: 0 auto;
+    max-width: 1000px;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar-nav>li:hover {
+    background: #FC5157;
+    border-radius: 5px;
+}
+
+.nav-tabs>li>a:hover {
+    box-shadow: 0 16px 38px -12px rgba(252, 81, 87, 0.56), 0 4px 25px 0px rgba(252, 81, 87, 0.12), 0 8px 10px -5px rgba(252, 81, 87, 0.2);
+}
+
+
+/* Grid figure styles */
+
+.grid figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 20px 4%;
+    min-width: 320px;
+    max-width: 480px;
+    max-height: 360px;
+    border-radius: 6px;
+    padding: 10px;
+    height: auto;
+    background: #3085a3;
+    text-align: left;
+    cursor: pointer;
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.grid figure img {
+    opacity: 1;
+}
+
+.grid figure figcaption {
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+    pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption>a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.grid figure figcaption>a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+
+.grid figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+}
+
+.grid figure h2 span {
+    font-weight: 800;
+    background-color: #FC5157;
+    padding: 2px 10px;
+}
+
+.grid figure h2,
+.grid figure p {
+    margin: 0;
+}
+
+.grid figure p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+}
+
+
+/* Essential styles from demo.css */
+
+.embed-container {
+    margin: 90px 0;
+    position: relative;
+    padding-bottom: 51.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar .navbar-nav>li>a {
+    text-align: center;
+}
+
+.nav-tabs>li>a {
+    color: rgba(245, 245, 245, 0.7);
+    border-radius: 4px;
+    background: rgba(245, 245, 245, 0.1);
+    margin: 4px;
+}
+
+.para {
+    color: white;
+    font-size: 1.4em;
+    line-height: 1.8em;
+    padding: 0px 60px 40px 60px;
+}
+
+.tag {
+    color: #2FAA97;
+    margin: 50px 40px 10px 40px;
+    opacity: 1;
+}
+
+.title {
+    margin-top: -20px;
+    margin-bottom: -20px;
+    min-height: 32px;
+    margin-left: 20%;
+    margin-right: -20px;
+    background-color: #FC5157;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.title h2 {
+    color: #FFFFFF;
+    font-size: 3.6em;
+    font-weight: 600;
+}
+
+
+/* Responsive styles */
+
+@media (max-width: 992px) {
+    .title-right {
+        margin-top: -55px;
+        margin-left: 35%;
+        margin-right: -20px;
+    }
+    .title-left {
+        margin-top: -55px;
+        margin-right: 35%;
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0px;
+    }
+    .logo-container {
+        margin-left: 20px;
+    }
+    .col-md-10 {
+        padding: 0;
+    }
+    .card .content {
+        padding: 0;
+    }
+    h2 {
+        font-size: 2em;
+        line-height: 1.2em;
+    }
+    .para {
+        font-size: 1.2em;
+        line-height: 1.2em;
+        padding: 0px 15px 20px 15px;
+    }
+    .title-right {
+        margin-top: -55px;
+        margin-left: 15px;
+        margin-right: 25%;
+    }
+    .title-left {
+        margin-top: -55px;
+        margin-right: 50px;
+        margin-left: 25%;
+        margin-bottom: 70px;
+    }
+    .title-right h2,
+    .title-left h2 {
+        padding-left: 20px;
+        text-align: left;
+        font-size: 2.4em;
+    }
+    .index-page .brand h1 {
+        font-size: 3em;
+    }
+}
